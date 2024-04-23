@@ -108,7 +108,7 @@
             <section class="product-hero_details">
                 <div class="container my-3 px-0">
                   <div class="row p-3 mt-lg-5 mt-xl-0 bg-white mx-0 align-items-center">
-                    <div class="col-6">
+                    <div class="col-6 col-md-9">
                       
                       <h2 class="card-category mb-3">
                         <span>#</span><a href="#">Cybersécurité</a>
@@ -118,27 +118,34 @@
                             <i class="fa-solid fa-desktop"></i>
                             <span>E-learning</span>
                         </a>
-                        <a href="#" class="time-filter ps-md-2">
+                        <a href="#" class="time-filter px-md-2">
                             <i class="fa-regular fa-clock"></i>
                             <span>30 minutes</span>
                         </a>
+                        <a href="#" class="level-filter ps-md-2">
+                            <i class="fa-solid fa-signal"></i>
+                            <span>Perfectionnement</span>
+                        </a>
                     </div>
                     </div>
-                    <div class="col-6 d-flex align-items-center gap-2 justify-content-end">
-                      <div class="card-price">
+                    <div class="col-6 col-md-3 d-flex align-items-center gap-2 justify-content-end">
+                      <a href="" title="Ajouter la formation au panier" class="card-price">
                         70 €<sup> ht</sup> 
-                      </div>
-                      <a class="nav-link nav-icon bounce" href="#"><img class="search-icon" src="./img/cart.svg" alt="icône de panier"></a>
+                      </a>
+                      <a class="nav-link nav-icon bounce" title="Ajouter la formation au panier" href="#"><img class="search-icon" src="./img/cart.svg" alt="icône de panier"></a>
                     </div>
                   </div>
 
                   <div class="row product-details_contact p-3">
                     <div class="col-6 product-details_socials d-flex align-items-center">
-                      <a href="#" class="bounce">
+                      <a href="#" class="bounce" title="Partager sur LinkedIn">
                         <i class="fa-brands fa-linkedin-in"></i>
                       </a>
-                      <a href="#" class="bounce">
+                      <a href="#" class="bounce" title="Partager par mail">
                         <i class="fa-regular fa-envelope"></i>
+                      </a>
+                      <a href="#" class="bounce" title="Télécharger le programme en PDF">
+                        <i class="fa-solid fa-download"></i>
                       </a>
                     </div>
                     <div class="col-6 d-flex align-items-center justify-content-end">
@@ -153,15 +160,20 @@
             </section>
 
             <section class="product-content my-5">
-                <div class="container py-4 px-3 px-md-0 accordion accordion-flush" id="accordionFlushExample">
+                <div class="container py-4 px-3 px-md-0 accordion accordion-flush" id="accordionFlushDetails">
                     <div class="d-lg-flex flex-column flex-lg-row justify-content-between product-content_menu m-0 d-none">
                       <h2 class="accordion-header px-0 ">
-                        <button class="accordion-button ps-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                          Objectif
+                        <button class="accordion-button ps-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseObjectif" aria-expanded="false" aria-controls="flush-collapseObjectif">
+                          Objectifs
                         </button>
                       </h2>
                       <h2 class="accordion-header px-0 ">
-                        <button class="accordion-button collapsed ps-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        <button class="accordion-button collapsed ps-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsePublic" aria-expanded="false" aria-controls="flush-collapsePublic">
+                          Pour qui ?
+                        </button>
+                      </h2>
+                      <h2 class="accordion-header px-0 ">
+                        <button class="accordion-button collapsed ps-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseProgramme" aria-expanded="false" aria-controls="flush-collapseProgramme">
                           Programme
                         </button>
                       </h2>
@@ -170,29 +182,32 @@
                           Pédagogie
                         </button>
                       </h2>
-                      <h2 class="accordion-header px-0 ">
-                        <button class="accordion-button collapsed ps-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                          Public
-                        </button>
-                      </h2>
+                      
                     </div>
 
                     <div class="btn-group product-content_menu d-lg-none">
-                        <button class="accordion-button btn btn-secondary btn-lg" type="button">
-                          Objectif
+                        <button class="accordion-button btn btn-lg" type="button">
+                          Objectifs
                         </button>
+
                         <button type="button" class="btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
                           <span class="visually-hidden">Bouton d'ouverture et fermeture du menu de détails de la formation</span>
                         </button>
+
                         <ul class="dropdown-menu">
                             <li>
                                 <h2 class="accordion-header px-0 ">
-                                    <button class="accordion-button ps-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">Objectif</button>
+                                    <button class="accordion-button ps-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseObjectif" aria-expanded="false" aria-controls="flush-collapseObjectif">Objectifs</button>
                                 </h2>
                             </li>
                             <li>
                                 <h2 class="accordion-header px-0 ">
-                                    <button class="accordion-button collapsed ps-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">Programme</button>
+                                    <button class="accordion-button collapsed ps-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsePublic" aria-expanded="false" aria-controls="flush-collapsePublic">Pour qui ?</button>
+                                  </h2>
+                            </li>
+                            <li>
+                                <h2 class="accordion-header px-0 ">
+                                    <button class="accordion-button collapsed ps-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseProgramme" aria-expanded="false" aria-controls="flush-collapseProgramme">Programme</button>
                                 </h2>
                             </li>
                             <li>
@@ -200,16 +215,12 @@
                                     <button class="accordion-button collapsed ps-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">Pédagogie</button>
                                 </h2>
                             </li>
-                            <li>
-                                <h2 class="accordion-header px-0 ">
-                                    <button class="accordion-button collapsed ps-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">Public</button>
-                                  </h2>
-                            </li>
+                            
                         </ul>
                     </div>
 
                     <div class="accordion-item row mx-0 px-3">
-                        <div id="flush-collapseOne" class="accordion-collapse collapse show col px-0" data-bs-parent="#accordionFlushExample">
+                        <div id="flush-collapseObjectif" class="accordion-collapse collapse show col px-0" data-bs-parent="#accordionFlushDetails">
                             <div class="accordion-body product-content_presentation">
                               <ul>
                                 <li>Comprendre l’état de la menace, les acteurs, les cibles et les modes opératoires utilisés</li>
@@ -239,7 +250,7 @@
                     </div>
 
                     <div class="accordion-item row mx-0 px-3">
-                        <div id="flush-collapseTwo" class="accordion-collapse collapse col px-0" data-bs-parent="#accordionFlushExample">
+                        <div id="flush-collapseProgramme" class="accordion-collapse collapse col px-0" data-bs-parent="#accordionFlushDetails">
                             <div class="accordion-body">
                                 <div class="container module-container">
                                     <div class="row gap-3">
@@ -326,7 +337,7 @@
                     </div>
 
                     <div class="accordion-item row mx-0 px-3">
-                        <div id="flush-collapseThree" class="accordion-collapse collapse col px-0" data-bs-parent="#accordionFlushExample">
+                        <div id="flush-collapseThree" class="accordion-collapse collapse col px-0" data-bs-parent="#accordionFlushDetails">
                             <div class="accordion-body product-content_pedagogie">
                                 <ul>
                                   <li>Contenu intéractif et ludique (quiz de validation des acquis, cas pratiques…)</li>
@@ -338,7 +349,7 @@
                     </div>
 
                     <div class="accordion-item row mx-0 px-3">
-                        <div id="flush-collapseFour" class="accordion-collapse collapse col px-0" data-bs-parent="#accordionFlushExample">
+                        <div id="flush-collapsePublic" class="accordion-collapse collapse col px-0" data-bs-parent="#accordionFlushDetails">
                             <div class="accordion-body product-content_objectif">
                                 <ul>
                                   <li>Collaborateurs</li>

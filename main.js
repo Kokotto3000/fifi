@@ -197,3 +197,12 @@ const toggleBtn= document.querySelectorAll(".dropdown-menu .accordion-button");
 toggleBtn.forEach(btn=> {
   btn.addEventListener("click", ()=> dropdownBtn.innerHTML= btn.innerHTML);
 });
+
+// menu dropdown catalog
+
+const dropdownFilterBtn= document.querySelector("#catalog-page .filter-menu-dropdown .dropdown-toggle");
+const toggleFilterBtn= document.querySelectorAll("#catalog-page .filter-menu-dropdown .dropdown-item");
+
+toggleFilterBtn.forEach(btn=> {
+  btn.addEventListener("click", ()=> dropdownFilterBtn.innerHTML= btn.innerHTML);
+});
