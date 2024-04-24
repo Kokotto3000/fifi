@@ -1103,8 +1103,9 @@ footer li a{
     transform: scale(1.1);
 }
 
-.product-trailer img{
-    width: 100%;
+.product-trailer img, .product-trailer iframe{
+    
+    /* width: 100%; */
     object-fit: cover;
     transition: transform 10000ms ease;
 }
