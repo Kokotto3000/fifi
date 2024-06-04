@@ -357,7 +357,7 @@ main{
     padding: 5px 40px 5px 10px;
     top: 16px;
     font-size: 16px;
-    width: 100px;
+    width: 110px;
 }
 
 a.card-tag:hover, a.card-tag:focus{
@@ -1266,7 +1266,13 @@ footer li a{
 
 .module-container p{
     color: var(--tertiary-color);
+    
 }
+
+/* #flush-collapseProgramme p{
+    color: var(--primary-color);
+    
+} */
 
 .module-card{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
@@ -1639,7 +1645,7 @@ footer li a{
     color: white;
 }
 
-.filter-column .form-check-input{
+.form-check-input{
     --bs-form-check-bg-image-fidal: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3e%3cpath fill='%23ffe764' stroke='none' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M181.3 32.4c17.4 2.9 29.2 19.4 26.3 36.8L197.8 128h95.1l11.5-69.3c2.9-17.4 19.4-29.2 36.8-26.3s29.2 19.4 26.3 36.8L357.8 128H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H347.1L325.8 320H384c17.7 0 32 14.3 32 32s-14.3 32-32 32H315.1l-11.5 69.3c-2.9 17.4-19.4 29.2-36.8 26.3s-29.2-19.4-26.3-36.8l9.8-58.7H155.1l-11.5 69.3c-2.9 17.4-19.4 29.2-36.8 26.3s-29.2-19.4-26.3-36.8L90.2 384H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h68.9l21.3-128H64c-17.7 0-32-14.3-32-32s14.3-32 32-32h68.9l11.5-69.3c2.9-17.4 19.4-29.2 36.8-26.3zM187.1 192L165.8 320h95.1l21.3-128H187.1z'/%3e%3c/svg%3e");
 }
 
@@ -1696,9 +1702,61 @@ footer li a{
     opacity: .5;
 }
 
+.form-switch{
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-switch input{
+    cursor: pointer;
+}
+
+.multiple-details{
+    transform: scale(1);
+    transition: transform 300ms ease-in-out;
+    transform-origin: left;
+}
+
+.multiple-details.hidden, .single-details.hidden{
+    transform: scale(0);
+}
+
+.single-details{
+    transform: scale(1);
+    transition: transform 300ms ease-in-out;
+    transform-origin: right;
+    margin: 0 auto;
+}
+
+.multiple-details{
+    background-color: var(--background-highlight-color);
+}
+
 /* @media screen and (max-width: 767px) {
     #catalog-page .dropdown-toggle.frame-btn{
         min-width: fit-content;
         font-size: 16px;
     }
 } */
+
+.product-hero_details:has(.single-details.hidden) .form-check-label{
+    color: var(--background-highlight-color)
+}
+
+.card-filters p{
+    font-size: 16px;
+}
+
+.details{
+    min-height: 180px;
+}
+
+small{
+    font-size: 14px;
+    text-align: end;
+}
+
+.product-hero_title p{
+    max-width: 700px;
+}

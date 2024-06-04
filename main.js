@@ -207,3 +207,17 @@ toggleFilterBtn.forEach(btn=> {
   btn.addEventListener("click", ()=> dropdownFilterBtn.innerHTML= btn.innerHTML);
 });
 
+
+
+function logItem() {
+
+  const multiple = document.querySelector(`.multiple-details`);
+  multiple.classList.toggle("hidden");
+
+  const single = document.querySelector(`.single-details`);
+  single.classList.toggle("hidden");
+}
+
+
+
+
