@@ -207,7 +207,7 @@ toggleFilterBtn.forEach(btn=> {
   btn.addEventListener("click", ()=> dropdownFilterBtn.innerHTML= btn.innerHTML);
 });
 
-
+// bouton intra
 
 function logItem() {
 
