@@ -1563,8 +1563,17 @@ footer li a{
 /* CATALOGUE */
 
 #catalog-page .card{
-    flex-basis: 49%;
+   
     margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 768px){
+
+    #catalog-page .card{
+        flex-basis: 49%;
+        
+    }
+    
 }
 
 #catalog-page .product-hero_title p{
@@ -1579,9 +1588,9 @@ footer li a{
     color: var(--secondary-color);
 }
 
-/* .filter-menu-dropdown{
-    width: fit-content;
-} */
+.dropdown-menu.show{
+    transform: translate3d(0px, 54px, 0px) !important;
+}
 
 .filter-menu-dropdown span{
     text-wrap: nowrap;
@@ -1607,7 +1616,7 @@ footer li a{
 .filter-menu-dropdown .dropdown-menu .dropdown-item:hover, .filter-menu-dropdown .dropdown-menu .dropdown-item:focus, .filter-menu-dropdown .dropdown-menu .dropdown-item:active, .filter-menu-dropdown .dropdown-menu .dropdown-item:focus-visible{
     background-color: rgba(109, 214, 220, 0.5);  
     /* border-bottom: 3px var(--secondary-color) solid; */
-    color: white;
+    color: var(--secondary-color);
 }
 
 .filter-menu-dropdown .dropdown-toggle.frame-btn.show{
@@ -1619,21 +1628,20 @@ footer li a{
     padding: 10px 20px;
 }
 
-.filter-column{
+.filter-column, .filter-menu{
     background-color: var(--background-main-color);
-    color: white;
 }
 
-.filter-column .accordion{
+.filter-column .accordion, .filter-menu .accordion{
     background-color: var(--background-main-color);
     border-color: transparent;
 }
 
-.filter-column .accordion-item{
+.filter-column .accordion-item, .filter-menu .accordion-item{
     border: none;
 }
 
-.filter-column .accordion-button{
+.filter-column .accordion-button, .filter-menu .accordion-button{
     background-color: transparent;
     font-size: 28px;
     font-weight: 600;
@@ -1642,17 +1650,17 @@ footer li a{
     color: var(--tertiary-color);
 }
 
-.filter-column .accordion-button::after{
+.filter-column .accordion-button::after, .filter-menu .accordion-button::after{
     content: none;
 }
 
-.filter-column .accordion-button:not(.collapsed){
+.filter-column .accordion-button:not(.collapsed), .filter-menu .accordion-button:not(.collapsed){
     color: var(--secondary-color);
     border-bottom: 3px solid var(--secondary-color);
     box-shadow: none !important;
 }
 
-.filter-column .dropdown-item{
+.filter-column .dropdown-item, .filter-menu .dropdown-item{
     color: white;
 }
 
@@ -1661,36 +1669,32 @@ footer li a{
     background-color: white;
 }  
 
-.form-check-input:checked[type=checkbox]{
+#catalog-page .form-check-input:checked[type=checkbox]{
     background-image: var(--bs-form-check-bg-image-fidal);
+    background-color: var(--background-main-color);
+    border: none;
 }
 
-.filter-column .form-check-input:checked[type=checkbox]{
+.filter-column .form-check-input:checked[type=checkbox], .filter-menu .form-check-input:checked[type=checkbox]{
     background-image: var(--bs-form-check-bg-image-fidal) !important;
 }
-
-.form-check-input:checked {
-    background-color: var(--background-highlight-color);
-    border-color: var(--background-highlight-color);
-}
-
 
 .form-check-label{
     text-wrap: wrap;
 }
 
-.filter-column .dropdown-toggle-split::after, .accordion-button{
+.filter-column .dropdown-toggle-split::after, .accordion-button, .filter-menu .dropdown-toggle-split::after, .accordion-button{
     border-bottom: 3px transparent solid;
 }
 
-.filter-column .dropdown-toggle-split:not(.collapsed)::after{
+.filter-column .dropdown-toggle-split:not(.collapsed)::after, .filter-menu .dropdown-toggle-split:not(.collapsed)::after{
     border-top: 0;
     border-right: .4em solid transparent;
     border-bottom: .4em solid var(--secondary-color);
     border-left: .4em solid transparent;
 }
 
-.filter-column .dropdown-toggle-split::after{
+.filter-column .dropdown-toggle-split::after, .filter-menu .dropdown-toggle-split::after{
     border-top: .4em solid var(--tertiary-color);
     
 }
@@ -1816,4 +1820,19 @@ small{
     .btn-check + .frame-btn {
         font-size: 20px;
     }
+}
+
+
+/** catalogue **/
+
+#offcanvasFilters{
+    background-color: var(--background-main-color);
+}
+
+#offcanvasFiltersLabel{
+    color: var(--secondary-color);
+}
+
+#offcanvasFilters .btn-close{
+    --bs-btn-close-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%236dd6dc'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");
 }

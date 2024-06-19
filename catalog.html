@@ -104,112 +104,167 @@
     
                         <div class="filter-menu container">
                             <div class="row py-4 py-lg-3 mt-lg-3 align-items-center justify-content-between">
-                                <div class="filter-menu_filter d-lg-none order-2 col-12 d-flex align-items-center justify-content-start">
-                                    <a class="frame-btn dropdown-toggle d-flex align-items-center justify-content-center gap-2" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                                <div class="filter-menu_filter d-lg-none order-2 col-12 col-md-6 col-lg-12 d-flex align-items-center justify-content-center justify-content-md-start px-0 mb-3 mb-md-0">
+                                    <a class="frame-btn d-flex align-items-center justify-content-center gap-2 px-0" data-bs-toggle="offcanvas" href="#offcanvasFilters" role="button" aria-controls="offcanvasFilters">
                                         <i class="fa-solid fa-filter"></i>Filtrer
                                     </a>
                                     
-                                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasFilters" aria-labelledby="offcanvasFiltersLabel">
                                         <div class="offcanvas-header">
-                                            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Filtrer les résultats</h5>
+                                            <h5 class="offcanvas-title" id="offcanvasFiltersLabel">Filtrer les résultats</h5>
                                             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                         </div>
+
                                         <div class="offcanvas-body">
-        
-                                            <div class="accordion" id="accordionPanelsStayOpenExample">
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header">
-                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                                                    Axes de formations
-                                                </button>
-                                                </h2>
-                                                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
-                                                <div class="accordion-body">
-                                                    <ul>
-                                                    <li class="form-check dropdown-item">
-                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                        <label class="form-check-label" for="flexCheckDefault">
-                                                        Compétences en savoir-être
-                                                        </label>
-                                                    </li>
-                                                    <li class="form-check dropdown-item">
-                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                        <label class="form-check-label" for="flexCheckDefault">
-                                                        Compétences managériales
-                                                        </label>
-                                                    </li>
-                                                    <li class="form-check dropdown-item">
-                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                        <label class="form-check-label" for="flexCheckDefault">
-                                                        Compétences en savoir-faire
-                                                        </label>
-                                                    </li>
-                                                    <li class="form-check dropdown-item">
-                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                        <label class="form-check-label" for="flexCheckDefault">
-                                                        Compétences techniques
-                                                        </label>
-                                                    </li>          
-                                                    </ul>
-                                                                            
+                                            <div class="accordion" id="accordionPanelsStayOpenFiltersMobile">
+                                                <div class="accordion-item">
+                                                    <div class="btn-group d-flex justify-content-between">
+                                                        
+                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOneMobile" aria-expanded="true" aria-controls="panelsStayOpen-collapseOneMobile">
+                                                            Thématiques
+                                                        </button>
+                
+                                                        <button type="button" class="btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOneMobile" aria-expanded="true" aria-controls="panelsStayOpen-collapseOneMobile">
+                                                            <span class="visually-hidden">Bouton d'ouverture et fermeture du menu dropdown des thématiques</span>
+                                                        </button>
+                                                        
+                                                    </div>
+                
+                                                    <div id="panelsStayOpen-collapseOneMobile" class="accordion-collapse collapse show">
+                                                        <div class="accordion-body">
+                                                            <ul>
+                                                            <li class="form-check dropdown-item">
+                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                <label class="form-check-label" for="flexCheckDefault">
+                                                                Droit de la santé
+                                                                </label>
+                                                            </li>
+                                                            <li class="form-check dropdown-item">
+                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                <label class="form-check-label" for="flexCheckDefault">
+                                                                Droit des associations
+                                                                </label>
+                                                            </li>
+                                                            <li class="form-check dropdown-item">
+                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                <label class="form-check-label" for="flexCheckDefault">
+                                                                Droit des sociétés
+                                                                </label>
+                                                            </li>
+                                                            <li class="form-check dropdown-item">
+                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                                <label class="form-check-label" for="flexCheckDefault">
+                                                                Droit de la concurrence et de la distribution
+                                                                </label>
+                                                            </li>          
+                                                            </ul>                            
+                                                        </div>
+                                                    </div>
                                                 </div>
+                
+                                                <div class="accordion-item">
+                                                    <div class="btn-group d-flex justify-content-between">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwoMobile" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwoMobile">
+                                                            Sous-catégories
+                                                        </button>
+                                                        
+                                                        <button type="button" class="btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split collapsed" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwoMobile" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwoMobile">
+                                                            <span class="visually-hidden">Bouton d'ouverture et fermeture du menu dropdown des sous-catégories</span>
+                                                        </button>
+                                                    </div>
+                
+                                                    <div id="panelsStayOpen-collapseTwoMobile" class="accordion-collapse collapse">
+                                                        <div class="accordion-body">
+                                                            <ul class="">
+                                                                <li class="form-check dropdown-item">
+                                                                    <input class="form-check-input" type="checkbox" value="" id="less-than-one-hour">
+                                                                    <label class="form-check-label" for="less-than-one-hour">
+                                                                    Sous-catégorie 1
+                                                                    </label>
+                                                                </li>
+                                                                <li class="form-check dropdown-item">
+                                                                    <input class="form-check-input" type="checkbox" value="" id="one-to-two">
+                                                                    <label class="form-check-label" for="one-to-two">
+                                                                    Sous-catégorie 1
+                                                                    </label>
+                                                                </li>
+                                                                <li class="form-check dropdown-item">
+                                                                    <input class="form-check-input" type="checkbox" value="" id="two-to-three">
+                                                                    <label class="form-check-label" for="two-to-three">
+                                                                    Sous-catégorie 3
+                                                                    </label>
+                                                                </li>
+                                                                <li class="form-check dropdown-item">
+                                                                    <input class="form-check-input" type="checkbox" value="" id="more-than-three">
+                                                                    <label class="form-check-label" for="more-than-three">
+                                                                    Sous-catégorie 4
+                                                                    </label>
+                                                                </li>
+                                                            </ul>                                   
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header">
-                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                                                        Durées
-                                                    </button>
-                                                </h2>
-
-                                                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-                                                    <div class="accordion-body">
-                                                        <ul class="">
-                                                            <li class="form-check dropdown-item">
-                                                                <input class="form-check-input" type="checkbox" value="" id="less-than-one-hour">
-                                                                <label class="form-check-label" for="less-than-one-hour">
-                                                                Moins d'une heure
-                                                                </label>
-                                                            </li>
-                                                            <li class="form-check dropdown-item">
-                                                                <input class="form-check-input" type="checkbox" value="" id="one-to-two">
-                                                                <label class="form-check-label" for="one-to-two">
-                                                                1h à 2h
-                                                                </label>
-                                                            </li>
-                                                            <li class="form-check dropdown-item">
-                                                                <input class="form-check-input" type="checkbox" value="" id="two-to-three">
-                                                                <label class="form-check-label" for="two-to-three">
-                                                                2h à 3h
-                                                                </label>
-                                                            </li>
-                                                            <li class="form-check dropdown-item">
-                                                                <input class="form-check-input" type="checkbox" value="" id="more-than-three">
-                                                                <label class="form-check-label" for="more-than-three">
-                                                                Plus de 3h
-                                                                </label>
-                                                            </li>
-                                                        </ul>                                           
+                
+                                                <div class="accordion-item">
+                                                    <div class="btn-group d-flex justify-content-between">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThreeMobile" aria-expanded="false" aria-controls="panelsStayOpen-collapseThreeMobile">
+                                                            Formats
+                                                        </button>
+                                                        
+                                                        <button type="button" class="btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split collapsed" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThreeMobile" aria-expanded="false" aria-controls="panelsStayOpen-collapseThreeMobile">
+                                                            <span class="visually-hidden">Bouton d'ouverture et fermeture du menu dropdown des formats</span>
+                                                        </button>
+                                                    </div>
+                
+                                                    <div id="panelsStayOpen-collapseThreeMobile" class="accordion-collapse collapse">
+                                                        <div class="accordion-body">
+                                                            <ul class="">
+                                                                <li class="form-check dropdown-item">
+                                                                    <input class="form-check-input" type="checkbox" value="" id="e-learning">
+                                                                    <label class="form-check-label" for="e-learning">
+                                                                    E-learning
+                                                                    </label>
+                                                                </li>
+                                                                <li class="form-check dropdown-item">
+                                                                    <input class="form-check-input" type="checkbox" value="" id="podcast">
+                                                                    <label class="form-check-label" for="podcast">
+                                                                    Podcast
+                                                                    </label>
+                                                                </li>
+                                                                <li class="form-check dropdown-item">
+                                                                    <input class="form-check-input" type="checkbox" value="" id="video">
+                                                                    <label class="form-check-label" for="video">
+                                                                    Vidéo
+                                                                    </label>
+                                                                </li>
+                                                                <li class="form-check dropdown-item">
+                                                                    <input class="form-check-input" type="checkbox" value="" id="article">
+                                                                    <label class="form-check-label" for="article">
+                                                                    Article
+                                                                    </label>
+                                                                </li>
+                                                            </ul>                                   
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            
-                                            </div>
                                         </div>
                                     </div>
+
                                 </div>
     
                                 <div class="d-none d-lg-flex filter-menu_filter order-2 order-lg-1 col-lg-4 col-xxl-3 d-flex align-items-center justify-content-center justify-content-lg-start">
-                                    <div class="d-flex gap-2"><i class="fa-solid fa-filter"></i> Filtrer les résultats</div>
+                                    <div class="d-flex gap-2">
+                                        <i class="fa-solid fa-filter"></i> Filtrer les résultats
+                                    </div>
                                 </div>
                                 
-                                <div class="col-12 col-lg-4 col-xxl-6 order-1 order-lg-2 filter-menu_results">
-                                    <span class="fw-bold">150</span> formations trouvées
+                                <div class="col-12 col-lg-4 col-xxl-6 order-1 order-lg-2 filter-menu_results mb-3 mb-lg-0 px-0 d-flex justify-content-center justify-content-md-start">
+                                    <span class="fw-bold me-2">150 </span>formations trouvées
                                 </div>
 
-                                <div class="filter-menu-dropdown col-12 col-lg-4 col-xxl-3 order-3 dropdown p-0 d-flex justify-content-between align-items-center">
-                                    <span class="text-nowrap">Trier par</span>
+                                <div class="filter-menu-dropdown col-12 col-md-6 col-lg-4 col-xxl-3 order-3 dropdown p-0 d-flex justify-content-center justify-content-md-end justify-content-lg-between align-items-center">
+                                    <span class="text-nowrap d-none d-md-block">Trier par</span>
                                     <a class="dropdown-toggle frame-btn d-flex justify-content-between align-items-center" href="#" role="button" id="orderMenu" data-bs-toggle="dropdown" aria-expanded="false">
                                         Pertinence
                                     </a>
@@ -225,7 +280,7 @@
                         </div>
     
                         <aside class="filter-column d-none d-lg-flex flex-column gap-3 col-lg-4 col-xxl-3">
-                            <div class="accordion" id="accordionPanelsStayOpenExample">
+                            <div class="accordion" id="accordionPanelsStayOpenFilters">
                                 <div class="accordion-item">
                                     <div class="btn-group d-flex justify-content-between">
                                         
@@ -238,6 +293,7 @@
                                         </button>
                                         
                                     </div>
+
                                     <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
                                         <div class="accordion-body">
                                             <ul>
@@ -280,6 +336,7 @@
                                             <span class="visually-hidden">Bouton d'ouverture et fermeture du menu dropdown des sous-catégories</span>
                                         </button>
                                     </div>
+
                                     <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
                                         <div class="accordion-body">
                                             <ul class="">
@@ -322,6 +379,7 @@
                                             <span class="visually-hidden">Bouton d'ouverture et fermeture du menu dropdown des formats</span>
                                         </button>
                                     </div>
+
                                     <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
                                         <div class="accordion-body">
                                             <ul class="">
@@ -357,332 +415,320 @@
                             
                         </aside>
     
-                        <section class="product-teasing col-12 col-lg-8 col-xxl-9 p-0">
-
-                            
-                                <div class="container-fluid pe-0">
-                                    
-                
-                                    <div class="cards row justify-content-between my-0">
-                                        <div class="card card-effect col-6 position-relative rounded-0 border-0 p-0" >
-                                            <!-- <a class="d-block card-tag position-absolute">
-                                                Actualité
-                                            </a> -->
-                                            <img src="./img/woman.jpg" class="card-img-top rounded-0" alt="...">
-                                            <div class="card-body">
-                                                <p class="card-category card-text mb-2"><span>#</span><a href="#">Droit social</a></p>
-                                                <h3 class="card-title mb-5 text-justify"><a href="#">Anticiper les risques de discrimation au travail</a></h3>
-                                                <div class="card-filters d-flex mb-4">
-                                                    <a href="#" class="format-filter pe-1">
-                                                        <i class="fa-solid fa-desktop"></i>
-                                                        E-learning
-                                                    </a>
-                                                    <a href="#" class="time-filter px-1">
-                                                        <i class="fa-regular fa-clock"></i>
-                                                        40 minutes
-                                                    </a>
-                                                </div>
-                                                <div class="card-price">
-                                                    299 €<sup> ht</sup> 
-                                                </div>
-                                            </div>
-                                            <div class="detail-arrow position-absolute">
-                                                <a href="#"><img src="./img/arrow-right.svg" alt="icône flèche indiquant de cliquer pour plus de détail"></a>
-                                            </div>
-                                        </div>
-                    
-                                        <div class="card card-effect col-6 position-relative rounded-0 border-0 p-0" >
-                                            <a href="#" class="d-block card-tag position-absolute">
-                                                Actualité
-                                            </a>
-                                            <img src="./img/man-with-group.png" class="card-img-top rounded-0" alt="...">
-                                            <div class="card-body">
-                                                <p class="card-category card-text mb-2"><span>#</span><a href="#">Droit concurence</a></p>
-                                                <h3 class="card-title mb-5 text-justify"><a href="#">Agir au quotidien en maîtrisant les règles du droit de […]</a></h3>
-                                                <div class="card-filters d-flex mb-4">
-                                                    <a href="#" class="format-filter pe-1">
-                                                        <i class="fa-solid fa-desktop"></i>
-                                                        Podcast
-                                                    </a>
-                                                    <a href="#" class="time-filter px-1">
-                                                        <i class="fa-regular fa-clock"></i>
-                                                        30 minutes
-                                                    </a>
-                                                </div>
-                                                <!-- <div class="card-price">
-                                                    299 €<sup> ht</sup> 
-                                                </div> -->
-                                            </div>
-                                            <div class="detail-arrow position-absolute">
-                                                <a href="#"><img src="./img/arrow-right.svg" alt="icône flèche indiquant de cliquer pour plus de détail"></a>
-                                            </div>
-                                        </div>
-                    
-                                        <div class="card card-effect col-6 position-relative rounded-0 border-0 p-0" >
-                                            <a class="d-block card-tag position-absolute">
-                                                Pack
-                                            </a>
-                                            <img src="./img/woman.jpg" class="card-img-top rounded-0" alt="...">
-                                            <div class="card-body">
-                                                <p class="card-category card-text mb-2"><span>#</span><a href="#">Cybersécurité</a></p>
-                                                <h3 class="card-title mb-5 text-justify"><a href="#">Gestion d’une cyberattaque en entreprise</a></h3>
-                                                <div class="card-filters d-flex mb-4">
-                                                    <a href="#" class="format-filter pe-1">
-                                                        <i class="fa-solid fa-desktop"></i>
-                                                        Pack
-                                                    </a>
-                                                    <a href="#" class="time-filter px-1">
-                                                        <i class="fa-regular fa-clock"></i>
-                                                        120 minutes
-                                                    </a>
-                                                </div>
-                                                <div class="card-price">
-                                                    1299 €<sup> ht</sup> 
-                                                </div>
-                                            </div>
-                                            <div class="detail-arrow position-absolute">
-                                                <a href="#"><img src="./img/arrow-right.svg" alt="icône flèche indiquant de cliquer pour plus de détail"></a>
-                                            </div>
-                                        </div>
-                    
-                                        <div class="card card-effect col-6 position-relative rounded-0 border-0 p-0" >
-                                            <a href="#" class="d-block card-tag position-absolute">
-                                                Actualité
-                                            </a>
-                                            <img src="./img/meeting.png" class="card-img-top rounded-0" alt="...">
-                                            <div class="card-body">
-                                                <p class="card-category card-text mb-2"><span>#</span><a href="#">Contentieux</a></p>
-                                                <h3 class="card-title mb-5 text-justify"><a href="#">Responsabilité du dirigeant d’entreprise</a></h3>
-                                                <div class="card-filters d-flex mb-4">
-                                                    <a href="#" class="format-filter pe-1">
-                                                        <i class="fa-solid fa-desktop"></i>
-                                                        E-learning
-                                                    </a>
-                                                    <a href="#" class="time-filter px-1">
-                                                        <i class="fa-regular fa-clock"></i>
-                                                        40 minutes
-                                                    </a>
-                                                </div>
-                                                <!-- <div class="card-price">
-                                                    299 €<sup> ht</sup> 
-                                                </div> -->
-                                            </div>
-                                            <div class="detail-arrow position-absolute">
-                                                <a href="#"><img src="./img/arrow-right.svg" alt="icône flèche indiquant de cliquer pour plus de détail"></a>
-                                            </div>
-                                        </div>
-                
-                                        <div class="card card-effect col-6 position-relative rounded-0 border-0 p-0" >
-                                            <!-- <a class="d-block card-tag position-absolute">
-                                                Actualité
-                                            </a> -->
-                                            <img src="./img/speech.png" class="card-img-top rounded-0" alt="...">
-                                            <div class="card-body">
-                                                <p class="card-category card-text mb-2"><span>#</span><a href="#">Compliance</a></p>
-                                                <h3 class="card-title mb-5 text-justify"><a href="#">Prévenir la coruption loi sapin 2</a></h3>
-                                                <div class="card-filters d-flex mb-4">
-                                                    <a href="#" class="format-filter pe-1">
-                                                        <i class="fa-solid fa-desktop"></i>
-                                                        E-learning
-                                                    </a>
-                                                    <a href="#" class="time-filter px-1">
-                                                        <i class="fa-regular fa-clock"></i>
-                                                        40 minutes
-                                                    </a>
-                                                </div>
-                                                <div class="card-price">
-                                                    159 €<sup> ht</sup> 
-                                                </div>
-                                            </div>
-                
-                                            <div class="detail-arrow position-absolute">
-                                                <a href="#"><img src="./img/arrow-right.svg" alt="icône flèche indiquant de cliquer pour plus de détail"></a>
-                                            </div>
-                                        </div>
-                
-                                        <div class="card card-effect col-6 position-relative rounded-0 border-0 p-0" >
-                                          <!-- <a class="d-block card-tag position-absolute">
-                                              Actualité
-                                          </a> -->
-                                          <img src="./img/woman.jpg" class="card-img-top rounded-0" alt="...">
-                                          <div class="card-body">
-                                              <p class="card-category card-text mb-2"><span>#</span><a href="#">Droit social</a></p>
-                                              <h3 class="card-title mb-5 text-justify"><a href="#">Anticiper les risques de discrimation au travail</a></h3>
-                                              <div class="card-filters d-flex mb-4">
-                                                  <a href="#" class="format-filter pe-1">
-                                                      <i class="fa-solid fa-desktop"></i>
-                                                      E-learning
-                                                  </a>
-                                                  <a href="#" class="time-filter px-1">
-                                                      <i class="fa-regular fa-clock"></i>
-                                                      40 minutes
-                                                  </a>
-                                              </div>
-                                              <div class="card-price">
-                                                  299 €<sup> ht</sup> 
-                                              </div>
-                                          </div>
-                                          <div class="detail-arrow position-absolute">
-                                              <a href="#"><img src="./img/arrow-right.svg" alt="icône flèche indiquant de cliquer pour plus de détail"></a>
-                                          </div>
-                                        </div>
-                    
-                                        <div class="card card-effect col-6 position-relative rounded-0 border-0 p-0" >
-                                            <a href="#" class="d-block card-tag position-absolute">
-                                                Actualité
-                                            </a>
-                                            <img src="./img/man-with-group.png" class="card-img-top rounded-0" alt="...">
-                                            <div class="card-body">
-                                                <p class="card-category card-text mb-2"><span>#</span><a href="#">Droit concurence</a></p>
-                                                <h3 class="card-title mb-5 text-justify"><a href="#">Agir au quotidien en maîtrisant les règles du droit de […]</a></h3>
-                                                <div class="card-filters d-flex mb-4">
-                                                    <a href="#" class="format-filter pe-1">
-                                                        <i class="fa-solid fa-desktop"></i>
-                                                        Podcast
-                                                    </a>
-                                                    <a href="#" class="time-filter px-1">
-                                                        <i class="fa-regular fa-clock"></i>
-                                                        30 minutes
-                                                    </a>
-                                                </div>
-                                                <!-- <div class="card-price">
-                                                    299 €<sup> ht</sup> 
-                                                </div> -->
-                                            </div>
-                                            <div class="detail-arrow position-absolute">
-                                                <a href="#"><img src="./img/arrow-right.svg" alt="icône flèche indiquant de cliquer pour plus de détail"></a>
-                                            </div>
-                                        </div>
-                    
-                                        <div class="card card-effect col-6 position-relative rounded-0 border-0 p-0" >
-                                            <a class="d-block card-tag position-absolute">
-                                                Pack
-                                            </a>
-                                            <img src="./img/woman.jpg" class="card-img-top rounded-0" alt="...">
-                                            <div class="card-body">
-                                                <p class="card-category card-text mb-2"><span>#</span><a href="#">Cybersécurité</a></p>
-                                                <h3 class="card-title mb-5 text-justify"><a href="#">Gestion d’une cyberattaque en entreprise</a></h3>
-                                                <div class="card-filters d-flex mb-4">
-                                                    <a href="#" class="format-filter pe-1">
-                                                        <i class="fa-solid fa-desktop"></i>
-                                                        Pack
-                                                    </a>
-                                                    <a href="#" class="time-filter px-1">
-                                                        <i class="fa-regular fa-clock"></i>
-                                                        120 minutes
-                                                    </a>
-                                                </div>
-                                                <div class="card-price">
-                                                    1299 €<sup> ht</sup> 
-                                                </div>
-                                            </div>
-                                            <div class="detail-arrow position-absolute">
-                                                <a href="#"><img src="./img/arrow-right.svg" alt="icône flèche indiquant de cliquer pour plus de détail"></a>
-                                            </div>
-                                        </div>
-                    
-                                        <div class="card card-effect col-6 position-relative rounded-0 border-0 p-0" >
-                                            <a href="#" class="d-block card-tag position-absolute">
-                                                Actualité
-                                            </a>
-                                            <img src="./img/meeting.png" class="card-img-top rounded-0" alt="...">
-                                            <div class="card-body">
-                                                <p class="card-category card-text mb-2"><span>#</span><a href="#">Contentieux</a></p>
-                                                <h3 class="card-title mb-5 text-justify"><a href="#">Responsabilité du dirigeant d’entreprise</a></h3>
-                                                <div class="card-filters d-flex mb-4">
-                                                    <a href="#" class="format-filter pe-1">
-                                                        <i class="fa-solid fa-desktop"></i>
-                                                        E-learning
-                                                    </a>
-                                                    <a href="#" class="time-filter px-1">
-                                                        <i class="fa-regular fa-clock"></i>
-                                                        40 minutes
-                                                    </a>
-                                                </div>
-                                                <!-- <div class="card-price">
-                                                    299 €<sup> ht</sup> 
-                                                </div> -->
-                                            </div>
-                                            <div class="detail-arrow position-absolute">
-                                                <a href="#"><img src="./img/arrow-right.svg" alt="icône flèche indiquant de cliquer pour plus de détail"></a>
-                                            </div>
-                                        </div>
-                
-                                        <div class="card card-effect col-6 position-relative rounded-0 border-0 p-0" >
-                                            <!-- <a class="d-block card-tag position-absolute">
-                                                Actualité
-                                            </a> -->
-                                            <img src="./img/speech.png" class="card-img-top rounded-0" alt="...">
-                                            <div class="card-body">
-                                                <p class="card-category card-text mb-2"><span>#</span><a href="#">Compliance</a></p>
-                                                <h3 class="card-title mb-5 text-justify"><a href="#">Prévenir la coruption loi sapin 2</a></h3>
-                                                <div class="card-filters d-flex mb-4">
-                                                    <a href="#" class="format-filter pe-1">
-                                                        <i class="fa-solid fa-desktop"></i>
-                                                        E-learning
-                                                    </a>
-                                                    <a href="#" class="time-filter px-1">
-                                                        <i class="fa-regular fa-clock"></i>
-                                                        40 minutes
-                                                    </a>
-                                                </div>
-                                                <div class="card-price">
-                                                    159 €<sup> ht</sup> 
-                                                </div>
-                                            </div>
-                
-                                            <div class="detail-arrow position-absolute">
-                                                <a href="#"><img src="./img/arrow-right.svg" alt="icône flèche indiquant de cliquer pour plus de détail"></a>
-                                            </div>
-                                        </div>
-                                      </div>
-                                            
-                                        
-                                    <!-- <div class="d-flex w-100 justify-content-center">
-                                        <a class="voir-plus-btn" href="./catalogue.html"
-                                          >Plus de suggestions</a
-                                        >
-                                      </div> -->
-                                </div>
-
-                                <div class="d-flex w-100 justify-content-center my-5">
-                                    <nav aria-label="Pagination">
-                                        <ul class="pagination d-flex align-items-center">
-                                            <li class="page-item">
-                                                <a class="page-link disabled" href="#" aria-label="Précedent">
-                                                    <span aria-hidden="true"><i class="fa-solid fa-chevron-left"></i></span>
-                                                </a>
-                                            </li>
-                                            <li class="page-item"><a class="page-link active" href="#">1</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                            <li class="page-item">
-                                            <a class="page-link" href="#" aria-label="Suivant">
-                                                <span aria-hidden="true"><i class="fa-solid fa-chevron-right"></i></span>
-                                            </a>
-                                            </li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                
-                        
-                         
-    
-                            
+                        <div class="product-teasing col-12 col-lg-8 col-xxl-9 p-0">
+                            <div class="container-fluid px-0">
             
+                                <div class="cards row justify-content-between my-0">
+
+                                    <div class="card card-effect col-12 col-md-6 position-relative rounded-0 border-0 p-0" >
+                                        <!-- <a class="d-block card-tag position-absolute">
+                                            Actualité
+                                        </a> -->
+                                        <img src="./img/woman.jpg" class="card-img-top rounded-0" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-category card-text mb-2"><span>#</span><a href="#">Droit social</a></p>
+                                            <h3 class="card-title mb-5 text-justify"><a href="#">Anticiper les risques de discrimation au travail</a></h3>
+                                            <div class="card-filters d-flex mb-4">
+                                                <a href="#" class="format-filter pe-1">
+                                                    <i class="fa-solid fa-desktop"></i>
+                                                    E-learning
+                                                </a>
+                                                <a href="#" class="time-filter px-1">
+                                                    <i class="fa-regular fa-clock"></i>
+                                                    40 minutes
+                                                </a>
+                                            </div>
+                                            <div class="card-price">
+                                                299 €<sup> ht</sup> 
+                                            </div>
+                                        </div>
+                                        <div class="detail-arrow position-absolute">
+                                            <a href="#"><img src="./img/arrow-right.svg" alt="icône flèche indiquant de cliquer pour plus de détail"></a>
+                                        </div>
+                                    </div>
+                
+                                    <div class="card card-effect col-12 col-md-6 position-relative rounded-0 border-0 p-0" >
+                                        <a href="#" class="d-block card-tag position-absolute">
+                                            Actualité
+                                        </a>
+                                        <img src="./img/man-with-group.png" class="card-img-top rounded-0" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-category card-text mb-2"><span>#</span><a href="#">Droit concurence</a></p>
+                                            <h3 class="card-title mb-5 text-justify"><a href="#">Agir au quotidien en maîtrisant les règles du droit de […]</a></h3>
+                                            <div class="card-filters d-flex mb-4">
+                                                <a href="#" class="format-filter pe-1">
+                                                    <i class="fa-solid fa-desktop"></i>
+                                                    Podcast
+                                                </a>
+                                                <a href="#" class="time-filter px-1">
+                                                    <i class="fa-regular fa-clock"></i>
+                                                    30 minutes
+                                                </a>
+                                            </div>
+                                            <!-- <div class="card-price">
+                                                299 €<sup> ht</sup> 
+                                            </div> -->
+                                        </div>
+                                        <div class="detail-arrow position-absolute">
+                                            <a href="#"><img src="./img/arrow-right.svg" alt="icône flèche indiquant de cliquer pour plus de détail"></a>
+                                        </div>
+                                    </div>
+                
+                                    <div class="card card-effect col-12 col-md-6 position-relative rounded-0 border-0 p-0" >
+                                        <a class="d-block card-tag position-absolute">
+                                            Pack
+                                        </a>
+                                        <img src="./img/woman.jpg" class="card-img-top rounded-0" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-category card-text mb-2"><span>#</span><a href="#">Cybersécurité</a></p>
+                                            <h3 class="card-title mb-5 text-justify"><a href="#">Gestion d’une cyberattaque en entreprise</a></h3>
+                                            <div class="card-filters d-flex mb-4">
+                                                <a href="#" class="format-filter pe-1">
+                                                    <i class="fa-solid fa-desktop"></i>
+                                                    Pack
+                                                </a>
+                                                <a href="#" class="time-filter px-1">
+                                                    <i class="fa-regular fa-clock"></i>
+                                                    120 minutes
+                                                </a>
+                                            </div>
+                                            <div class="card-price">
+                                                1299 €<sup> ht</sup> 
+                                            </div>
+                                        </div>
+                                        <div class="detail-arrow position-absolute">
+                                            <a href="#"><img src="./img/arrow-right.svg" alt="icône flèche indiquant de cliquer pour plus de détail"></a>
+                                        </div>
+                                    </div>
+                
+                                    <div class="card card-effect col-12 col-md-6 position-relative rounded-0 border-0 p-0" >
+                                        <a href="#" class="d-block card-tag position-absolute">
+                                            Actualité
+                                        </a>
+                                        <img src="./img/meeting.png" class="card-img-top rounded-0" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-category card-text mb-2"><span>#</span><a href="#">Contentieux</a></p>
+                                            <h3 class="card-title mb-5 text-justify"><a href="#">Responsabilité du dirigeant d’entreprise</a></h3>
+                                            <div class="card-filters d-flex mb-4">
+                                                <a href="#" class="format-filter pe-1">
+                                                    <i class="fa-solid fa-desktop"></i>
+                                                    E-learning
+                                                </a>
+                                                <a href="#" class="time-filter px-1">
+                                                    <i class="fa-regular fa-clock"></i>
+                                                    40 minutes
+                                                </a>
+                                            </div>
+                                            <!-- <div class="card-price">
+                                                299 €<sup> ht</sup> 
+                                            </div> -->
+                                        </div>
+                                        <div class="detail-arrow position-absolute">
+                                            <a href="#"><img src="./img/arrow-right.svg" alt="icône flèche indiquant de cliquer pour plus de détail"></a>
+                                        </div>
+                                    </div>
+            
+                                    <div class="card card-effect col-12 col-md-6 position-relative rounded-0 border-0 p-0" >
+                                        <!-- <a class="d-block card-tag position-absolute">
+                                            Actualité
+                                        </a> -->
+                                        <img src="./img/speech.png" class="card-img-top rounded-0" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-category card-text mb-2"><span>#</span><a href="#">Compliance</a></p>
+                                            <h3 class="card-title mb-5 text-justify"><a href="#">Prévenir la coruption loi sapin 2</a></h3>
+                                            <div class="card-filters d-flex mb-4">
+                                                <a href="#" class="format-filter pe-1">
+                                                    <i class="fa-solid fa-desktop"></i>
+                                                    E-learning
+                                                </a>
+                                                <a href="#" class="time-filter px-1">
+                                                    <i class="fa-regular fa-clock"></i>
+                                                    40 minutes
+                                                </a>
+                                            </div>
+                                            <div class="card-price">
+                                                159 €<sup> ht</sup> 
+                                            </div>
+                                        </div>
+            
+                                        <div class="detail-arrow position-absolute">
+                                            <a href="#"><img src="./img/arrow-right.svg" alt="icône flèche indiquant de cliquer pour plus de détail"></a>
+                                        </div>
+                                    </div>
+            
+                                    <div class="card card-effect col-12 col-md-6 position-relative rounded-0 border-0 p-0" >
+                                        <!-- <a class="d-block card-tag position-absolute">
+                                            Actualité
+                                        </a> -->
+                                        <img src="./img/woman.jpg" class="card-img-top rounded-0" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-category card-text mb-2"><span>#</span><a href="#">Droit social</a></p>
+                                            <h3 class="card-title mb-5 text-justify"><a href="#">Anticiper les risques de discrimation au travail</a></h3>
+                                            <div class="card-filters d-flex mb-4">
+                                                <a href="#" class="format-filter pe-1">
+                                                    <i class="fa-solid fa-desktop"></i>
+                                                    E-learning
+                                                </a>
+                                                <a href="#" class="time-filter px-1">
+                                                    <i class="fa-regular fa-clock"></i>
+                                                    40 minutes
+                                                </a>
+                                            </div>
+                                            <div class="card-price">
+                                                299 €<sup> ht</sup> 
+                                            </div>
+                                        </div>
+                                        <div class="detail-arrow position-absolute">
+                                            <a href="#"><img src="./img/arrow-right.svg" alt="icône flèche indiquant de cliquer pour plus de détail"></a>
+                                        </div>
+                                    </div>
+                
+                                    <div class="card card-effect col-12 col-md-6 position-relative rounded-0 border-0 p-0" >
+                                        <a href="#" class="d-block card-tag position-absolute">
+                                            Actualité
+                                        </a>
+                                        <img src="./img/man-with-group.png" class="card-img-top rounded-0" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-category card-text mb-2"><span>#</span><a href="#">Droit concurence</a></p>
+                                            <h3 class="card-title mb-5 text-justify"><a href="#">Agir au quotidien en maîtrisant les règles du droit de […]</a></h3>
+                                            <div class="card-filters d-flex mb-4">
+                                                <a href="#" class="format-filter pe-1">
+                                                    <i class="fa-solid fa-desktop"></i>
+                                                    Podcast
+                                                </a>
+                                                <a href="#" class="time-filter px-1">
+                                                    <i class="fa-regular fa-clock"></i>
+                                                    30 minutes
+                                                </a>
+                                            </div>
+                                            <!-- <div class="card-price">
+                                                299 €<sup> ht</sup> 
+                                            </div> -->
+                                        </div>
+                                        <div class="detail-arrow position-absolute">
+                                            <a href="#"><img src="./img/arrow-right.svg" alt="icône flèche indiquant de cliquer pour plus de détail"></a>
+                                        </div>
+                                    </div>
+                
+                                    <div class="card card-effect col-12 col-md-6 position-relative rounded-0 border-0 p-0" >
+                                        <a class="d-block card-tag position-absolute">
+                                            Pack
+                                        </a>
+                                        <img src="./img/woman.jpg" class="card-img-top rounded-0" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-category card-text mb-2"><span>#</span><a href="#">Cybersécurité</a></p>
+                                            <h3 class="card-title mb-5 text-justify"><a href="#">Gestion d’une cyberattaque en entreprise</a></h3>
+                                            <div class="card-filters d-flex mb-4">
+                                                <a href="#" class="format-filter pe-1">
+                                                    <i class="fa-solid fa-desktop"></i>
+                                                    Pack
+                                                </a>
+                                                <a href="#" class="time-filter px-1">
+                                                    <i class="fa-regular fa-clock"></i>
+                                                    120 minutes
+                                                </a>
+                                            </div>
+                                            <div class="card-price">
+                                                1299 €<sup> ht</sup> 
+                                            </div>
+                                        </div>
+                                        <div class="detail-arrow position-absolute">
+                                            <a href="#"><img src="./img/arrow-right.svg" alt="icône flèche indiquant de cliquer pour plus de détail"></a>
+                                        </div>
+                                    </div>
+                
+                                    <div class="card card-effect col-12 col-md-6 position-relative rounded-0 border-0 p-0" >
+                                        <a href="#" class="d-block card-tag position-absolute">
+                                            Actualité
+                                        </a>
+                                        <img src="./img/meeting.png" class="card-img-top rounded-0" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-category card-text mb-2"><span>#</span><a href="#">Contentieux</a></p>
+                                            <h3 class="card-title mb-5 text-justify"><a href="#">Responsabilité du dirigeant d’entreprise</a></h3>
+                                            <div class="card-filters d-flex mb-4">
+                                                <a href="#" class="format-filter pe-1">
+                                                    <i class="fa-solid fa-desktop"></i>
+                                                    E-learning
+                                                </a>
+                                                <a href="#" class="time-filter px-1">
+                                                    <i class="fa-regular fa-clock"></i>
+                                                    40 minutes
+                                                </a>
+                                            </div>
+                                            <!-- <div class="card-price">
+                                                299 €<sup> ht</sup> 
+                                            </div> -->
+                                        </div>
+                                        <div class="detail-arrow position-absolute">
+                                            <a href="#"><img src="./img/arrow-right.svg" alt="icône flèche indiquant de cliquer pour plus de détail"></a>
+                                        </div>
+                                    </div>
+            
+                                    <div class="card card-effect col-12 col-md-6 position-relative rounded-0 border-0 p-0" >
+                                        <!-- <a class="d-block card-tag position-absolute">
+                                            Actualité
+                                        </a> -->
+                                        <img src="./img/speech.png" class="card-img-top rounded-0" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-category card-text mb-2"><span>#</span><a href="#">Compliance</a></p>
+                                            <h3 class="card-title mb-5 text-justify"><a href="#">Prévenir la coruption loi sapin 2</a></h3>
+                                            <div class="card-filters d-flex mb-4">
+                                                <a href="#" class="format-filter pe-1">
+                                                    <i class="fa-solid fa-desktop"></i>
+                                                    E-learning
+                                                </a>
+                                                <a href="#" class="time-filter px-1">
+                                                    <i class="fa-regular fa-clock"></i>
+                                                    40 minutes
+                                                </a>
+                                            </div>
+                                            <div class="card-price">
+                                                159 €<sup> ht</sup> 
+                                            </div>
+                                        </div>
+            
+                                        <div class="detail-arrow position-absolute">
+                                            <a href="#"><img src="./img/arrow-right.svg" alt="icône flèche indiquant de cliquer pour plus de détail"></a>
+                                        </div>
+                                    </div>
+                                    </div>
+                                        
+                                    
+                                <!-- <div class="d-flex w-100 justify-content-center">
+                                    <a class="voir-plus-btn" href="./catalogue.html"
+                                        >Plus de suggestions</a
+                                    >
+                                    </div> -->
+                            </div>
+
+                            <div class="d-flex w-100 justify-content-center my-5">
+                                <nav aria-label="Pagination">
+                                    <ul class="pagination d-flex align-items-center">
+                                        <li class="page-item">
+                                            <a class="page-link disabled" href="#" aria-label="Précedent">
+                                                <span aria-hidden="true"><i class="fa-solid fa-chevron-left"></i></span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Suivant">
+                                            <span aria-hidden="true"><i class="fa-solid fa-chevron-right"></i></span>
+                                        </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
                         
-                        
-                            </section>
+                        </div>
                     
+                    </div>
                 </div>
             </section>
-                
-    
     
         </main>
-
-
-
+        
         <footer>
             <div class="container px-3 px-md-0">
                 <div class="row justify-content-around">
