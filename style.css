@@ -1790,10 +1790,16 @@ small{
     .format-filter, .time-filter{
         border-right: 1px solid var(--low-primary-color);
     }
+
+    
 }
 
 @media screen and (min-width: 1400px) {
     .product-teasing .row:first-of-type{
         max-width: 1320px;
+    }
+    
+    .devis-btn{
+        margin-top: -1rem !important;
     }
 }
