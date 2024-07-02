@@ -209,14 +209,14 @@ toggleFilterBtn.forEach(btn=> {
 
 // bouton intra
 
-function logItem() {
+/*function logItem() {
 
   const multiple = document.querySelector(`.multiple-details`);
   multiple.classList.toggle("hidden");
 
   const single = document.querySelector(`.single-details`);
   single.classList.toggle("hidden");
-}
+}*/
 
 
 

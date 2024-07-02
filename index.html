@@ -10,6 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body id="home-page">
     <div class="body-container" >
         <header>
@@ -32,16 +33,16 @@
     
             <nav class="navbar navbar-dark navbar-expand-lg pt-5">
                 <div class="container px-4 px-md-0">
-                    <a class="navbar-brand" href="#"><img src="./img/logo-fidal-tagline-blanc.png" alt="logo Fidal My Legal Media"></a>
+                    <a class="navbar-brand" href="#" aria-label="lien vers la page d'accueil"><img src="./img/logo-fidal-tagline-blanc.png" alt="logo Fidal My Legal Media"></a>
     
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Ouverture et fermeture du menu principal">
                         <span class="navbar-toggler-icon"></span>
                     </button>
     
                     <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
                         <ul class="navbar-nav mb-2 mb-lg-0 w-100 justify-content-center">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#"><span>/</span> Actualités</a>
+                                <a class="nav-link active" href="#"><span>/</span> Actualités</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#"><span>/</span> Formations</a>
@@ -53,13 +54,13 @@
     
                         <ul class="navbar-nav navbar-icons mb-2 mb-lg-0 flex-row justify-content-between gap-3">
                             <li class="nav-item">
-                                <a class="nav-link nav-icon bounce" aria-current="page" href="#"><img class="search-icon" src="./img/search.svg" alt="icône de recherche"></a>
+                                <a class="nav-link nav-icon bounce" href="#" title="Recherche" aria-label="Recherche"><img class="search-icon" src="./img/search.svg" alt="icône de recherche"></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link nav-icon bounce" href="#"><img class="search-icon" src="./img/user.svg" alt="icône du compte utilisateur"></a>
+                                <a class="nav-link nav-icon bounce" href="#" title="Mon compte" aria-label="Mon compte"><img class="search-icon" src="./img/user.svg" alt="icône du compte utilisateur"></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link nav-icon bounce" href="#"><img class="search-icon" src="./img/cart.svg" alt="icône de panier"></a>
+                                <a class="nav-link nav-icon bounce" href="#" title="Panier" aria-label="Panier"><img class="search-icon" src="./img/cart.svg" alt="icône de panier"></a>
                             </li>
                         </ul>
                     </div>
@@ -75,8 +76,8 @@
                             <p class="hero-p">Développez vos compétences juridiques et accélérez votre performance</p>
                         </div>
                         <div class="hero-buttons row justify-content-center justify-content-sm-start">
-                            <button class="col-7 col-sm-4 col-md-3 arrow-btn d-flex align-items-center justify-content-center"><img class="long-arrow-right me-2 horizontal-bounce" src="./img/long-arrow-right.svg" alt="icône d'une longue flèche vers la droite invitant à cliquer" data-text=" Formations"> Formations</button>
-                            <button class="col-7 col-sm-4 col-md-3 frame-btn ">Actualités</button>
+                            <a href="" class="col-7 col-sm-4 col-md-3 arrow-btn d-flex align-items-center justify-content-center"><img class="long-arrow-right me-2 horizontal-bounce" src="./img/long-arrow-right.svg" alt="icône d'une longue flèche vers la droite invitant à cliquer" data-text=" Formations"> Formations</a>
+                            <a href="" class="col-7 col-sm-4 col-md-3 frame-btn">Actualités</a>
                         </div>
                     </div>
                 </div>
@@ -109,10 +110,10 @@
                                     <!-- <a class="d-block card-tag position-absolute">
                                         Actualité
                                     </a> -->
-                                    <img src="./img/woman.jpg" class="card-img-top rounded-0" alt="...">
+                                    <img src="./img/woman.jpg" class="card-img-top rounded-0" alt="image d'illustration de la formation">
                                     <div class="card-body">
                                         <p class="card-category card-text mb-2"><span>#</span><a href="#">Droit social</a></p>
-                                        <h3 class="card-title mb-5 text-justify"><a href="#" aria-label="En savoir plus sur la formation : Anticiper les risques de discrimation au travail">Anticiper les risques de discrimation au travail</a></h3>
+                                        <h3 class="card-title mb-5 text-justify"><a href="#">Anticiper les risques de discrimation au travail</a></h3>
                                         <div class="card-filters d-flex mb-4">
                                             <a href="#" class="format-filter pe-1">
                                                 <i class="fa-solid fa-desktop"></i>
@@ -123,12 +124,13 @@
                                                 40 minutes
                                             </a>
                                         </div>
+
                                         <div class="card-price">
                                             299 €<sup> ht</sup> 
                                         </div>
                                     </div>
                                     <div class="detail-arrow position-absolute">
-                                        <a href="#" aria-label="En savoir plus sur : Anticiper les risques de discrimation au travail"><img src="./img/arrow-right.svg" alt="icône flèche indiquant de cliquer pour plus de détail"></a>
+                                        <a href="#" title="En savoir plus sur : Anticiper les risques de discrimation au travail" aria-label="En savoir plus sur : Anticiper les risques de discrimation au travail"><img src="./img/arrow-right.svg" alt="icône flèche indiquant de cliquer pour plus de détail"></a>
                                     </div>
                                 </div>
             
@@ -1244,7 +1246,7 @@
                                 <div class="blog-content position-relative p-3">
                                     <a href="https://www.fidal.com/fr/actualites?populate=&region_tids=All&field_expertise_reference_target_id_verf=All&secteur_reference_target_id_verf=All&field_stake_reference_target_id_verf=All&field_type_of_news_target_id=134" target="_blank" arial-label="Se rendre sur la page avis d'expert du blog Fidal dans un nouvel onglet" class="blog-content_category mb-1"><span class="pe-3">/</span>L'avis d'expert</a>
         
-                                    <h3 class="mb-4"><a href="https://www.fidal.com/fr/actualites/promotion-de-contrefacons-sur-les-reseaux-sociaux-ne-soyez-pas-dupe-des-dupes" target="_blank" aria-label="Lire le détail de l'article sur le blog de Fidal dans un nouvel onglet : Projet de loi portant mesures d’urgence pour lutter contre l’inflation">Projet de loi portant mesures d’urgence pour lutter contre l’inflation</a></h3>
+                                    <h3 class="mb-4"><a href="https://www.fidal.com/fr/actualites/promotion-de-contrefacons-sur-les-reseaux-sociaux-ne-soyez-pas-dupe-des-dupes" target="_blank" aria-label="Lire l'article sur le blog de Fidal dans un nouvel onglet : Projet de loi portant mesures d’urgence pour lutter contre l’inflation">Projet de loi portant mesures d’urgence pour lutter contre l’inflation</a></h3>
         
                                     <div class="blog-content_author mb-2">
                                         <p class="m-0">Par <a href="https://www.fidal.com/fr/avocat/tiphaine-perrier" target="_blank" aria-label="Se rendre sur la page du blog de Fidal de l'auteur Tiphaine Perrier dans un nouvel onglet">Tiphanie Perrier</a></p>
@@ -1252,7 +1254,7 @@
                                     </div>
         
                                     <div class="position-absolute detail-arrow">
-                                        <a href="https://www.fidal.com/fr/actualites/promotion-de-contrefacons-sur-les-reseaux-sociaux-ne-soyez-pas-dupe-des-dupes" target="_blank" aria-label="Lire le détail de l'article sur le blog de Fidal dans un nouvel onglet : Projet de loi portant mesures d’urgence pour lutter contre l’inflation"><img src="./img/arrow-right.svg" alt="icône flèche indiquant de cliquer pour plus de détail"></a>
+                                        <a href="https://www.fidal.com/fr/actualites/promotion-de-contrefacons-sur-les-reseaux-sociaux-ne-soyez-pas-dupe-des-dupes" target="_blank" aria-label="Lire l'article sur le blog de Fidal dans un nouvel onglet : Projet de loi portant mesures d’urgence pour lutter contre l’inflation"><img src="./img/arrow-right.svg" alt="icône flèche indiquant de cliquer pour plus de détail"></a>
                                     </div>
                                 </div>
                             </div>
