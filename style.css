@@ -993,14 +993,10 @@ a.blog-content_category{
     border: none;
 }
 
-.product-content_presentation, .product-content_objectif, .product-content_pedagogie, #flush-collapseDiffusion li, .product-hero_details p{
+.product-content_presentation, .product-content_objectif, .product-content_pedagogie, #flush-collapseDiffusion li, .product-hero_details p, .product-content_programme, .about-content p, .about-content ul{
     color: var(--tertiary-color);
     font-size: 20px;
     font-weight: 400;
-    letter-spacing: 0.5px;
-}
-
-.product-content_programme{
     letter-spacing: 0.5px;
 }
 
