@@ -169,12 +169,12 @@ footer .container{
     padding: 0;
 }
 
-footer h4{
+footer h3{
     font-size: 30px;
     font-weight: 600;  
 }
 
-footer h4 span{
+footer h3 span{
     font-family: var(--secondary-font-family);
     font-size: 26px;
     font-style: italic;
@@ -330,10 +330,10 @@ button:hover, button:focus{
 }
 
 .breadcrumb-item+.breadcrumb-item::before {
-    float: left;
-    padding-right: var(--bs-breadcrumb-item-padding-x);
-    color: var(--secondary-color);
     content: "/";
+    color: var(--secondary-color);
+    float: left;
+    padding-right: var(--bs-breadcrumb-item-padding-x);  
 }
 
 .fidal-breadcrumb .breadcrumb-item.active a{
