@@ -1,3 +1,5 @@
+//SCROLL DES CATEGORIES
+
 let isLoaded= false;
 
 document.addEventListener("scroll", () => {
