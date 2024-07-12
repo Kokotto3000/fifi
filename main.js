@@ -206,7 +206,3 @@ const toggleFilterBtn= document.querySelectorAll("#catalog-page .filter-menu-dro
 toggleFilterBtn.forEach(btn=> {
   btn.addEventListener("click", ()=> dropdownFilterBtn.innerHTML= btn.innerHTML);
 });
-
-
-
-
