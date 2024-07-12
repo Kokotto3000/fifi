@@ -906,6 +906,10 @@ a.blog-content_category{
     color: var(--secondary-color);
 }
 
+iframe{
+    border: none;
+}
+
 .product-trailer img, .product-trailer iframe{
     width: 80%;
     min-height: 200px;
@@ -944,7 +948,7 @@ a.blog-content_category{
     margin: 0 auto;
 }
 
-.product-teasing h4{
+.product-teasing h3{
     color: var(--background-highlight-color);
     font-size: 32px;
     font-weight: 400;
