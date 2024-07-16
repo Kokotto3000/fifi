@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 
-<body id="product-page">
+<body id="product">
     <div class="body-container">
         <header>
             <div class="container-fluid header-band px-0">
@@ -57,13 +57,13 @@
 
                         <ul class="navbar-nav navbar-icons mb-2 mb-lg-0 flex-row justify-content-between gap-3">
                             <li class="nav-item">
-                                <a class="nav-link nav-icon bounce" aria-current="page" href="#"><img class="search-icon" src="./img/search.svg" alt="icône de recherche"></a>
+                                <a class="nav-link nav-icon bounce" aria-current="page" href="#"><img src="./img/search.svg" alt="icône de recherche"></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link nav-icon bounce" href="#"><img class="search-icon" src="./img/user.svg" alt="icône du compte utilisateur"></a>
+                                <a class="nav-link nav-icon bounce" href="#"><img src="./img/user.svg" alt="icône du compte utilisateur"></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link nav-icon bounce" href="#"><img class="search-icon" src="./img/cart.svg" alt="icône de panier"></a>
+                                <a class="nav-link nav-icon bounce" href="#"><img src="./img/cart.svg" alt="icône de panier"></a>
                             </li>
                         </ul>
                     </div>
@@ -121,14 +121,10 @@
                                             </div>
                     
                                             <div class="col-6 col-xl-5 col-xxl-4 d-flex flex-column align-items-end gap-2 justify-content-center">
-                                                <div class="d-flex flex-lg-column flex-xl-row justify-content-end align-items-center gap-3 ">
-                                                    <a href="" title="Acquérir une licence individuelle" class="card-price">
-                                                    70 €<sup> ht</sup> 
-                                                    </a>
-                        
-                                                    <a class="nav-link nav-icon bounce" title="Ajouter une licence individuelle au panier" href="#"><img class="search-icon" src="./img/cart.svg" alt="icône de panier"></a>
-                                                </div>
-                                                
+                                                <button title="Acquérir une licence individuelle" aria-label="Acquérir une licence individuelle" class="d-flex flex-lg-column flex-xl-row justify-content-end align-items-center gap-3 ">
+                                                    <span class="card-price">70 €<sup> ht</sup></span>
+                                                    <img class="bounce" src="./img/cart.svg" alt="icône de panier">
+                                                </button>
             
                                                 <small class="d-block">La licence individuelle</small>
                                             </div>
@@ -149,13 +145,6 @@
                                                 <i class="fa-solid fa-download"></i>
                                             </a>
                                         </div>
-            
-                                        <!--<div class="col-6 d-flex align-items-center justify-content-end p-0">
-                                            <a href="#" class="text-end">
-                                                Plus d'informations
-                                                <i class="fa-solid fa-question ps-2 bounce"></i>
-                                            </a>
-                                        </div>-->
             
                                         <div class="col-6 d-flex align-items-center justify-content-end p-0">
                                             <a href="" class="col-7 col-sm-4 col-md-3 devis-btn frame-btn">Demande de devis</a>
