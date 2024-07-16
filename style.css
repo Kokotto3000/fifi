@@ -493,7 +493,7 @@ a.card-tag:hover, a.card-tag:focus{
 
 .card-filters a{
     font-family: var(--secondary-font-family);
-    font-size: 16px;
+    font-size: 14px;
     color: var(--low-primary-color);
 }
 
@@ -516,15 +516,14 @@ a.card-tag:hover, a.card-tag:focus{
 }
 
 .card-price{
-    font-size: 38px;
+    font-size: 30px;
     text-transform: uppercase;
     font-weight: 500;
 }
 
 .card-price sup{
-    font-size: 22px;
+    font-size: 14px;
 }
-
 
 /*** REASSURANCE ***/
 
@@ -1095,7 +1094,6 @@ iframe{
 
 .scroller .card img{
     filter:blur(.5px) brightness(.5);
-    
     transition: filter 400ms ease-in-out;
 }
 
@@ -1132,12 +1130,12 @@ iframe{
     font-weight: 200;
 }
 
-.pack-link:hover svg, .pack-link:focus svg{
+.pack-link:hover img, .pack-link:focus img{
     animation: horizontal-bounce 1000ms cubic-bezier(.28,.84,.42,1) infinite;
 }
 
-.pack-link a svg{
-    width: 20px;
+.pack-link a img{
+    width: 35px;
     margin-left: 10px;
 }
 
@@ -1536,6 +1534,10 @@ small{
     .devis-btn.frame-btn {
         font-size: 16px;
     }
+
+    .card-filters a{
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -1611,13 +1613,11 @@ small{
         height: calc(var(--lh) * var(--max-lines));
     }
     
-    .card-filters a{
-        font-size: 14px;
-    }
+    
 
-    .format-filter, .time-filter{
+    /*.format-filter, .time-filter{
         border-right: 0px solid transparent;
-    }
+    }*/
 
     .categories{
         padding: 30px 0;
@@ -1662,9 +1662,13 @@ small{
         font-size: 20px;
     }
 
-    .format-filter, .time-filter{
-        border-right: 0px solid transparent;
+    .card-filters a{
+        font-size: 14px;
     }
+
+    /*.format-filter, .time-filter{
+        border-right: 0px solid transparent;
+    }*/
 }
 
 @media screen and (min-width: 1200px) {
@@ -1684,10 +1688,18 @@ small{
     .format-filter, .time-filter{
         border-right: 1px solid var(--low-primary-color);
     }
+
+    .card-filters a{
+        font-size: 16px;
+    }
 }
 
 @media screen and (min-width: 1400px) {
     .product-teasing .row:first-of-type{
         max-width: 1320px;
+    }
+
+    .card-filters a{
+        font-size: 14px;
     }
 }
