@@ -220,7 +220,7 @@ footer li a{
 
 /** BUTTONS **/
 
-button:hover, button:focus{
+button:hover:not(.disabled), button:focus:not(.disabled){
     opacity: 0.8;
 }
 
@@ -262,6 +262,13 @@ button:hover, button:focus{
     box-shadow: inset 0 0 20px rgba(109, 214, 220, 0.5), 0 0 20px rgba(109, 214, 220, 0.2);
     outline-color: rgba(109, 214, 220, 0);
     outline-offset: 15px;
+}
+
+.frame-btn.disabled, .frame-btn:disabled{
+    box-shadow: inset 0 0 20px rgba(109, 214, 220, 0.5), 0 0 20px rgba(109, 214, 220, 0.2);
+    outline-color: rgba(109, 214, 220, 0);
+    outline-offset: 15px;
+    opacity: 0.5;
 }
 
 .chevron-btn{
@@ -463,6 +470,7 @@ button:hover, button:focus{
     top: 16px;
     font-size: 16px;
     width: 110px;
+    z-index: 10;
 }
 
 a.card-tag:hover, a.card-tag:focus{
@@ -994,7 +1002,7 @@ iframe{
     margin-bottom: 100px;
 }
 
-.module-container p{
+.module-container p, .module-container li{
     color: var(--tertiary-color);
     
 }
@@ -1262,6 +1270,7 @@ button:has(img.bounce):hover img, button:has(img.bounce):focus img{
     color: var(--tertiary-color);
     font-size: 16px;
     margin-bottom: 1.5rem;
+    letter-spacing: .5px;
 }
 
 .about-content ul{
@@ -1269,7 +1278,7 @@ button:has(img.bounce):hover img, button:has(img.bounce):focus img{
     padding: 3rem;
 }
 
-#about-page main{
+body#cms main{
     clear: both;
     background: linear-gradient(180deg, rgba(15, 34, 56, 1), rgba(15, 34, 56, 0.5) 20%),
             linear-gradient(90deg, rgba(15, 34, 56, 1), rgba(15, 34, 56, 0) 68%),
@@ -1282,9 +1291,13 @@ button:has(img.bounce):hover img, button:has(img.bounce):focus img{
     min-height: 70vh;
 }
 
-#about-page main .container{
+body#cms main .container, body#cms main #content-wrapper .container{
     backdrop-filter: blur(3px);
     padding-top: 100px;
+}
+
+.about-content * {
+    color: var(--tertiary-color);
 }
 
 
@@ -1676,7 +1689,7 @@ small{
         max-width: 1140px;
     }
 
-    #about-page main{
+    body#cms main{
         min-height: 90svh;
         min-height: 90vh;
     }
@@ -1702,4 +1715,18 @@ small{
     .card-filters a{
         font-size: 14px;
     }
+}
+
+.order-btn.frame-btn{
+    font-size: 16px;
+    outline: none;
+    padding: .375rem .75rem;
+}
+
+a.cms-link{
+    color: var(--secondary-color);
+    font-size: 26px;
+    font-family: var(--secondary-font-family);
+    font-style: italic;
+    font-weight: 200;
 }
